@@ -1,0 +1,41 @@
+.header {
+    margin: 5vh auto;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.search {
+    width: 60vw;
+    font-size: 20px;
+    padding: 5px;
+    border: none;
+    background-color: #1b1b1b8c;
+    color: gray;
+    transition: 0.3s;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        transform: scale(1.01);
+    }
+}
+
+.btn {
+    font-size: 26px;
+    min-width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 15px;
+    background-color: #1b1b1b8c;
+    color: gray;
+    transition: 0.3s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
