@@ -10,6 +10,8 @@ const PostModal = () => {
     const [title, setTitle] = useState("");
     const [description, setDescription] = useState("");
 
+    const token = localStorage.getItem("Token-Auth");
+
     useEffect(() => {
 
         const handleClickOutside = (e) => {
@@ -47,7 +49,8 @@ const PostModal = () => {
                 const res = await fetch("http://localhost:3000/auth/todo", {
                     method: "POST",
                     headers: {
-                        "Content-Type": "application/json"
+                        "Content-Type": "application/json",
+                        "Token-Auth": token
                     },
                     body: JSON.stringify({ title, description })
                 });

@@ -18,7 +18,7 @@ app.use(cors({
 app.use(express.json());
 
 app.use("/oauth", userRouter);
-app.use("/auth", authRouter);
+app.use("/auth", validateMID, authRouter);
 
 //app.use(express.static(path.join(__dirname, "./public")));
 //app.get("*", (req, res)=>{

@@ -4,7 +4,7 @@ const jwt = require("jsonwebtoken");
 module.exports = async (req, res, next)=>{
 
 
-const token = req.header("token-auth");
+const token = req.header("Token-Auth");
 if(!token) return res.status(401).json({sucess:false, message: "acesso negado, sem token"});
 
 

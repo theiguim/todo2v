@@ -1,0 +1,62 @@
+form{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+}
+
+
+input{
+    width: 350px;
+    font-size: 18px;
+    padding: 5px;
+    border: none;
+    background-color: #1b1b1b8c;
+    color: white;
+    transition: 0.3s;
+    
+    &::placeholder{
+        color: gray;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        transform: scale(1.01);
+    }
+}
+
+button{
+    width: auto;
+    height: auto;
+    font-size: 15px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #1b1b1b8c;
+    color: gray;
+    transition: 0.3s;
+    cursor: pointer;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        transform: scale(1.01);
+    }
+}
+
+.prevArrow{
+    color: white;
+    font-size: 50px;
+    margin: 20px;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0);
+    
+   
+}
